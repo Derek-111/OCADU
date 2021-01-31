@@ -3,18 +3,19 @@ void setup() {
   background(255);
   frameRate(20);
 }
-  float r = 255;
-  float g = 0;
-  float b = 0;
-  // this value determines how quickly the colours will progress
-  float x = 7.5; // NOTE: the value MUST divide evenly into 255 or else the colour will get stuck
+
+float r = 255;
+float g = 0;
+float b = 0;
+// this value determines how quickly the colours will progress
+float x = 7.5; // NOTE: the value MUST divide evenly into 255 or else the colour will get stuck
   
 void draw() {
   pushMatrix();
   strokeWeight(random(1, 5));
-  stroke(r, g, b);
+  stroke(r, g, b, 50);
   translate(width/2, height/2);
-  rotate(radians(frameCount)*2);
+  rotate(radians(frameCount)*1.82);
   line(width/4, -2000, width/4, 2000);
   popMatrix();
   // r = 255, g = 0, b = 0
