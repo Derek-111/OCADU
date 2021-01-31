@@ -1,5 +1,5 @@
 void setup() {
-  size(500, 500);
+  size(1000, 1000);
   background(255);
   frameRate(20);
 }
@@ -16,7 +16,7 @@ void draw() {
   stroke(r, g, b, 50);
   translate(width/2, height/2);
   rotate(radians(frameCount)*1.82);
-  line(width/4, -2000, width/4, 2000);
+  line(width/4, 0, width/4, 750);
   popMatrix();
   // r = 255, g = 0, b = 0
   if((r == 255) && (b == 0)) {
