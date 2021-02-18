@@ -34,18 +34,18 @@ void leaf(float x, float y, float size, color c, float a){
   
   stroke(0, 50);
   noFill();
-  line(0+size*.65, 0, 0-size*.8, 0);
-  line(0+size*.5, 0, 0+size*.2, 0-size*.35);
-  line(0+size*.5, 0, 0+size*.2, 0+size*.35);
-  line(0+size*.3, 0, 0-size*.06, 0-size*.4);
-  line(0+size*.3, 0, 0-size*.06, 0+size*.4);
-  line(0+size*.1, 0, 0-size*.23, 0-size*.34);
-  line(0+size*.1, 0, 0-size*.23, 0+size*.34);
-  line(0-size*.1, 0, 0-size*.4, 0-size*.27);
-  line(0-size*.1, 0, 0-size*.4, 0+size*.27);
-  line(0-size*.3, 0, 0-size*.53, 0-size*.18);
-  line(0-size*.3, 0, 0-size*.53, 0+size*.18);
-  line(0-size*.5, 0, 0-size*.65, 0-size*.1);
-  line(0-size*.5, 0, 0-size*.65, 0+size*.1);
+  line(size*.65, 0, -size*.8, 0);
+  line(size*.5, 0, +size*.2, -size*.35);
+  line(size*.5, 0, +size*.2, size*.35);
+  line(size*.3, 0, -size*.06, -size*.4);
+  line(size*.3, 0, -size*.06, size*.4);
+  line(size*.1, 0, -size*.23, -size*.34);
+  line(size*.1, 0, -size*.23, size*.34);
+  line(-size*.1, 0, -size*.4, -size*.27);
+  line(-size*.1, 0, -size*.4, size*.27);
+  line(-size*.3, 0, -size*.53, -size*.18);
+  line(-size*.3, 0, -size*.53, size*.18);
+  line(-size*.5, 0, -size*.65, -size*.1);
+  line(-size*.5, 0, -size*.65, size*.1);
   popMatrix();
 }
